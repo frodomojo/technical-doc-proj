@@ -54,9 +54,13 @@ a:link {
   position: absolute;
   margin-left: 350px;
   margin-bottom: 300px;
+  margin-right: 100px;
   padding: 20;
-  display: block;
+  padding-bottom: 50;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 1em;
+
 }
 
 code {
@@ -72,7 +76,9 @@ code {
   border-radius: 2px;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   #main-doc {
-    display: none;
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
   }
